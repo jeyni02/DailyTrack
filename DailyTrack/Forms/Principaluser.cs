@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DailyTrack
+namespace DailyTrack.Forms
 {
-    public partial class Form1 : Form
+    public partial class Principaluser : Form
     {
-        public Form1()
+        public Principaluser()
         {
             InitializeComponent();
         }

@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,11 +55,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\AddEvents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\AddEvents.Designer.cs">
+      <DependentUpon>AddEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principaluser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Principaluser.Designer.cs">
+      <DependentUpon>Principaluser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administration.Designer.cs">
+      <DependentUpon>Administration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Estudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Estudent.Designer.cs">
+      <DependentUpon>Estudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Club.cs" />
     <Compile Include="Models\Event.cs" />
@@ -59,6 +98,24 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddEvents.resx">
+      <DependentUpon>AddEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principaluser.resx">
+      <DependentUpon>Principaluser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administration.resx">
+      <DependentUpon>Administration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Estudent.resx">
+      <DependentUpon>Estudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -67,7 +124,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,6 +139,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daily-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maestro %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maestro %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources1\TextFile1.txt" />
+    <None Include="Resources\ojo.png" />
+    <None Include="Resources\ojos-cruzados.png" />
+    <None Include="Resources\blogger.png" />
+    <None Include="Resources\Administrador.jpg" />
+    <None Include="Resources\candado.png" />
+    <None Include="Resources\usuario %283%29.png" />
+    <None Include="Resources\Premium Vector _ Line background wave gradient template design.jpg" />
+    <None Include="Resources\fondo.e.jpg" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\Blanco con círculos verdes.jpg" />
+    <None Include="Resources\foinfo .png" />
+    <None Include="Resources\estudio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
